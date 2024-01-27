@@ -48,5 +48,18 @@
     <td>Dr.A.P.J.Abdul Kalam</td>
 </tr>
 </table>
+<hr>
+<h1>Code dispaly</h1>
+Tags:javascript, html
+Converts the given array elements into <li> tags and appends them to the list of the given id.
+    <pre>
+        const arrayToHTMLList = (arr, listID) =>
+  document.querySelector(`#${listID}`).innerHTML += arr
+    .map(item => `
+${item}
+`)
+    .join('');
+    </pre>
+    <a href="https://code.pieces.app/collections/javascript">Snippet</a>
 </body>
 </html>
